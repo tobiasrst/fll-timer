@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css" />
+        <script>let $ = require('jquery');</script>
+        <script>require('popper.js');</script>
+        <script>require('bootstrap');</script>
+        <script>let timer = require('./timer.js')</script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        
+        <meta charset="UTF-8">
+        <title>FLL Timer</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    </head>
+
+    <body>
+        <div class="container-fluid fill">
+            <div class="row twenty-five-height">
+                <div class="col-md-4">
+                    <p class="centered-content">FLL LOGO</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="centered-content">FLL TIMER</p>
+                </div>
+                <div class="col-md-4">
+                    <p class="centered-content">FLL LOGO</p>
+                </div>
+            </div>
+            <div class="row fifty-height bg-orange">
+                <div id="timer"></div>
+                <script>timer.drawInitial()</script>
+            </div>
+            <div class="row twenty-five-height">
+                <div class="col-md-6">
+                    <button type="button" class="btn bg-orange centered-content ctrlbtn" onclick="timer.start()">start</button>
+                </div>
+                <div class="col-md-6">
+                    <button type="button" class="btn bg-orange centered-content ctrlbtn" onclick="timer.reset()">RESET</button>
+                </div>
+           </div>
+        </div>
+    </body>
+</html>
