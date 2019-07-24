@@ -1,11 +1,11 @@
 @font-face {
     font-family: DSEG7;
-    src: url(DSEG7Classic-Bold.ttf)
+    src: url(../resources/DSEG7Classic-Bold.ttf)
 }
 
 @font-face {
     font-family: DSEG14;
-    src: url(DSEG14Classic-Bold.ttf)
+    src: url(../resources/DSEG14Classic-Bold.ttf)
 }
 
 html, body {

@@ -1,16 +1,29 @@
 {
   "name": "fll-timer",
+  "productName": "FLL Timer",
   "version": "1.0.0",
   "description": "",
-  "main": "main.js",
+  "author": "Tobias Richstein <tobias.rst@gmail.com>",
+  "main": "src/main.js",
+  "build": {
+    "appId": "com.tobiasrst.fll-timer",
+    "files": [
+      "src/**/*",
+      "node_modules/**/*",
+      "package.json",
+      "resources/**/*"
+    ],
+    "publish": null
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "electron main.js"
+    "start": "electron src/main.js",
+    "dist": "electron-builder"
   },
-  "author": "",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^5.0.7"
+    "electron": "^5.0.7",
+    "electron-builder": "^21.1.1"
   },
   "dependencies": {
     "bootstrap": "^4.3.1",

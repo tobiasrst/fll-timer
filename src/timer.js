@@ -27,7 +27,8 @@ const draw = (time) => {
 
     let timeString = `${minutes}:${new String(seconds).padStart(2, '0')}`;
 
-    document.getElementById('timer').innerHTML = `<p class="centered-content timer">${timeString}</p>`;
+    if(time === 0) document.getElementById('timer').innerHTML = `<p class="centered-content timer" style="color: red;">${timeString}</p>`;
+    else document.getElementById('timer').innerHTML = `<p class="centered-content timer">${timeString}</p>`;
 }
 
 module.exports.drawInitial = () => draw(totalTime);
